@@ -1,0 +1,93 @@
+* {
+
+padding: 0;
+margin: 0;
+
+}
+
+body {
+    transition: 0.5s;
+}
+
+body.dark{
+    background-color: #161616;
+    color: white;
+}
+
+h1 {
+
+    display: flexbox;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    padding-top: 30px;
+    color: white;
+}
+
+h2 {
+
+    display: flexbox;
+    text-align: center;
+
+}
+
+header {
+
+    background-color: black;
+
+}
+
+.trilho {
+    width: 70px;
+    height: 35px;
+    background-color: #707070;
+    position: relative;
+}
+
+.trilho .indicador {
+    width: 35px;
+    height: 35px;
+    background-color: #000000;
+    transform: scale(.9);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+#tema {
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.trilho.dark {
+    background-color: lightgray;
+}
+
+.trilho.dark .indicador {
+    left: 35px;
+    background-color: #fff;
+    
+}
+
+#palestrantes {
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+form {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+}
