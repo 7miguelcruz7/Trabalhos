@@ -5,3 +5,7 @@ trilho.addEventListener('click', ()=>{
     trilho.classList.toggle('dark')
     body.classList.toggle('dark')
 })
+function Menssagem(){
+
+alert("Enviado com suceso")
+}
