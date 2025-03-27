@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 * {
 
@@ -14,16 +16,11 @@
         transition: 0.5s;
     }
     
-    
-    h1 {
-    
-        display: flexbox;
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        padding: 30px;
-        padding-top: 30px;
-        color: black;
+    body.dark{
+        background-color: #161616;
+        color: white;
     }
+    
     
     h2 {
     
@@ -45,12 +42,37 @@
     }
     
     header {
-
-        background-color: #b76501;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Tektur';
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        background: linear-gradient(to bottom, #b76501, #000000, #000000, #000000);
+        background-size: 100% 400%;
         border-bottom: solid;
-        border-color: #c9822c;
-       
+        border-color: #7c4502;
+        animation: animacao 5s ease-in infinite alternate;
     
+    }
+
+    @keyframes animacao {
+
+        0% {
+
+            background-position-x: 0%;
+
+        }
+
+        100% {
+
+            background-position: 400%;
+
+        }
+        
     }
 
 
@@ -70,8 +92,6 @@
         border-style: ridge;
         border-radius: 10px;
         border-color: #c9822c;
-        width: 90%;
-        height: 50vh;
     }
 
    
@@ -79,8 +99,8 @@
     .ogro {
         display: flex;
         justify-content: center;
-        width: 20%;
-        height: 90%;
+        width: 250px;
+        height: 250px;
         position: relative;
         background-color: #fff;
         border-radius: 20px;
@@ -88,11 +108,15 @@
         transition: 0.5s;
     }
     
+    .ogro:hover {
+        height: 300px;
+    }
+
 
     .ogro .img-ogro {
         position: absolute;
-        width: 60%;
-        height: 70%;
+        width: 150px;
+        height: auto;
         top: 5px;
         transition: 0.5s;
     }
@@ -159,6 +183,13 @@
 
     }
 
+    input {
+
+        background: linear-gradient(#c9822c, rgb(46, 46, 46));
+        border-radius: 5px;
+
+    }
+
     button:hover {
 
         background: linear-gradient(#c9822c, black);
@@ -171,12 +202,4 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
-    }
-
-    input {
-
-        background: linear-gradient(#c9822c, rgb(46, 46, 46));
-        border-radius: 5px;
-        height: 25px;
-
     }
