@@ -183,6 +183,18 @@
 
     }
 
+    a {
+
+        color: #7c4502;
+
+    }
+
+    a:visited {
+
+        color: white;
+
+    }
+
     button:hover {
 
         background: linear-gradient(#c9822c, black);
