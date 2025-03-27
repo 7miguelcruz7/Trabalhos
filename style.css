@@ -14,10 +14,6 @@
         transition: 0.5s;
     }
     
-    body.dark{
-        background-color: #161616;
-        color: white;
-    }
     
     h1 {
     
@@ -74,6 +70,8 @@
         border-style: ridge;
         border-radius: 10px;
         border-color: #c9822c;
+        width: 90%;
+        height: 50vh;
     }
 
    
@@ -81,8 +79,8 @@
     .ogro {
         display: flex;
         justify-content: center;
-        width: 250px;
-        height: 250px;
+        width: 20%;
+        height: 90%;
         position: relative;
         background-color: #fff;
         border-radius: 20px;
@@ -90,15 +88,11 @@
         transition: 0.5s;
     }
     
-    .ogro:hover {
-        height: 300px;
-    }
-
 
     .ogro .img-ogro {
         position: absolute;
-        width: 150px;
-        height: auto;
+        width: 60%;
+        height: 70%;
         top: 5px;
         transition: 0.5s;
     }
@@ -177,4 +171,12 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
+    }
+
+    input {
+
+        background: linear-gradient(#c9822c, rgb(46, 46, 46));
+        border-radius: 5px;
+        height: 25px;
+
     }
