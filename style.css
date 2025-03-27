@@ -208,3 +208,16 @@
         justify-content: center;
         margin-bottom: 10px;
     }
+
+    main {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-transform: uppercase;
+        flex-direction: column;
+        font-size: 6vh;
+       font-style: italic;
+       
+    }
